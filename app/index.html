@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .active {
+        color: pink;
+      }
+
+    </style>
+  </head>
+  <body ng-app="app">
+
+    <div class="lista" ng-controller="StoreController as store">
+      <ul>
+        <li ng-repeat="product in store.products" ng-class="{active: store.isSelected(product)}" ng-click="store.selectProduct(product)">
+          {{product.name}} <em>{{product.price | currency}}</em>
+        </li>
+      </ul>
+      <p>{{store.total | currency}}</p>
+    </div>
+
+    <script type="application/javascript" src="../bower_components/angular/angular.min.js"></script>
+    <script type="application/javascript" src="index.js"></script>
+  </body>
+</html>

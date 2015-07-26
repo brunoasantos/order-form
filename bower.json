@@ -1,0 +1,19 @@
+{
+  "name": "order-form",
+  "version": "0.0.0",
+  "authors": [
+    "Bruno Santos <brunoasantos2@gmail.com>",
+    "Pedro Ivo <formiga.pedro@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.3"
+  }
+}
